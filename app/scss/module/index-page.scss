@@ -1,0 +1,110 @@
+@import "../vars";
+
+.index-page {
+    .home {
+        padding: 106px 0 167px;
+        &__inner {
+            display: flex;
+            align-items: center;
+        }
+
+        &__title {
+            position: relative;
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 100%;
+            color: $title-color;
+            margin: 0 0 40px;
+            max-width: 520px;
+            span {
+                color: $green;
+            }
+        }
+
+        &__content {
+            flex: 0 1 42.2%;
+        }
+    }
+
+    .home-image {
+        position: relative;
+        flex: 0 1 830px;
+        &__box {
+            position: relative;
+        }
+        &__picture {
+            position: relative;
+            width: 100%;
+            padding: 0 0 63.8%;
+            z-index: 1;
+            img {
+                @include images;
+            }
+        }
+
+        &__element {
+            position: absolute;
+            width: 639px;
+            height: 639px;
+            bottom: -41%;
+            left: 12%;
+            z-index: 0;
+            img {
+                @include images;
+            }
+        }
+    }
+
+    .home-btns {
+        &__transparent {
+            margin-left: 24px;
+            background-color: transparent;
+            border: 2px solid $green;
+            color: $green;
+            transition: background-color 0.2s linear, color 0.2s linear;
+            @media (min-width: $hover-media) {
+                &:hover {
+                    background-color: $green;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+// ==========================================================================
+
+.services {
+    background-color: $pink;
+
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -6px;
+    }
+}
+
+// ===========================================================================
+
+.partners {
+    &__overtitle,
+    &__title {
+        text-align: center;
+    }
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -28px 0;
+    }
+
+    &__item {
+        position: relative;
+        flex: 0 0 342px;
+        height: 100px;
+        margin: 28px 0;
+        img {
+            @include images;
+        }
+    }
+}

@@ -3,7 +3,8 @@
     width: 100%;
     top: 0;
     left: 0;
-
+    z-index: 30;
+    background-color: #fff;
     &__inner {
         height: 104px;
         display: flex;
@@ -50,7 +51,7 @@
         transition: color 0.2s linear;
         @media (min-width: $hover-media) {
             &:hover {
-                color: rgba(31, 41, 55, .7);
+                color: rgba(31, 41, 55, 0.7);
             }
         }
     }

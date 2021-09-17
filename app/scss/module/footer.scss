@@ -1,0 +1,53 @@
+.footer {
+    padding: 120px 0 104px;
+    background-color: #fff;
+
+    &__inner {
+        display: flex;
+    }
+}
+
+.footer-info {
+    flex: 0 0 266px;
+
+    &__logo {
+        position: relative;
+        width: 266px;
+        height: 78px;
+        margin: 0 0 40px;
+        img {
+            @include images;
+        }
+    }
+
+    &__copyright {
+        margin: 0 0 40px;
+        p {
+            font-size: 13px;
+            line-height: 15/13 * 100%;
+            color: #6b7280;
+        }
+
+        p + p{
+            margin-top: 16px;
+        }
+    }
+}
+
+.footer-socials{
+
+    &__link{
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+
+        img{
+            @include images;
+        }
+    }
+
+    &__link + &__link{
+        margin-left: 16px;
+    }
+}

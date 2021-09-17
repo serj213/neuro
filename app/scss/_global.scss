@@ -332,12 +332,13 @@ body {
 		border-radius: $radius;
 		padding: 40px;
 		background-color: #fff;
+		margin: 0 12px;
 	}
 
 	&__image {
 		position: relative;
 		width: 100%;
-		height: 200px;
+
 		margin: 0 0 40px;
 		img {
 			@include images;
@@ -356,7 +357,7 @@ body {
 		font-size: 20px;
 		line-height: 150%;
 		margin: 0 0 24px;
-		color:$text;
+		color: $text;
 	}
 
 	&__bottom {
@@ -376,9 +377,152 @@ body {
 
 .three-articles {
 	display: flex;
+	margin: 0 -12px;
 	.many-articles {
 		&__item {
 			flex: 0 1 33.333%;
+			.many-articles__image {
+				padding: 0 0 71%;
+			}
+		}
+	}
+}
+
+.two-articles {
+	display: flex;
+	margin: 0 -12px;
+	.many-articles {
+		&__item {
+			flex: 0 1 47.8%;
+			.many-articles__image {
+				padding: 0 0 57.5%;
+			}
+		}
+	}
+}
+
+// ==========Большая зелёная форма================
+
+.form-main {
+	&__bg {
+		background-image: url(../images/form_main/bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding: 120px 0 129px;
+		border-radius: $radius;
+	}
+
+	&__inner {
+		text-align: center;
+		max-width: 783px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 58/48 * 100%;
+		color: #fff;
+		margin: 0 0 16px;
+	}
+
+	&__descript {
+		font-family: $lato;
+		font-size: 20px;
+		line-height: 30 / 20 * 100%;
+		color: $white;
+		margin: 0 0 64px;
+	}
+
+	&__form {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		text-align: left;
+		max-width: 708px;
+	}
+
+	&__input {
+		flex: 0 0 342px;
+		&:nth-child(2) {
+			margin-left: 24px;
+		}
+
+		input {
+			border-radius: 4px;
+			border: 1px solid #ffff;
+			width: 100%;
+			padding: 12px 16px;
+			font-family: $lato;
+			font-size: 20px;
+			line-height: 100%;
+			background-color: none;
+			color: $text;
+			backdrop-filter: blur(10px);
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+	}
+
+	&__label {
+		display: block;
+		font-family: $lato;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 21 / 14 * 100%;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: $white;
+		margin: 0 0 4px;
+	}
+
+	&__textarea {
+		flex: 0 0 100%;
+		margin: 32px 0;
+		textarea {
+			background-color: rgba(255, 255, 255, 0.5);
+			border: 1px solid $white;
+			backdrop-filter: blur(10px);
+			border-radius: 4px;
+			width: 100%;
+			resize: none;
+			height: 135px;
+		}
+	}
+
+	&__bottom {
+		display: flex;
+	}
+
+	&__btn {
+		margin: 0 49px 0 0;
+	}
+
+	&__info {
+		font-family: $lato;
+		line-height: 21 / 14 * 100%;
+		color: #e5e7eb;
+	}
+}
+
+// кнопка для отправки форм
+
+.form-btn {
+	display: inline-block;
+	padding: 16px 32px;
+	color: $white;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 100%;
+	background-color: $green;
+	border: none;
+	transition: background-color 0.2s linear;
+	border-radius: 4px;
+	cursor: pointer;
+
+	@media (min-width: $hover-media) {
+		&:hover {
+			background-color: $green-hover;
 		}
 	}
 }

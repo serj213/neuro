@@ -30,7 +30,18 @@
             </select>
           </div>
 
-          <nav class="header__menu header-menu">
+          <div class="header__burger">
+            <span></span>
+          </div>
+
+          <nav class="header__menu header-menu ">
+
+            <div class="header__language ">
+              <select name="language" id="">
+                <option value="eng">eng</option>
+                <option value="ru">ru</option>
+              </select>
+            </div>
             <ul class="header-menu__list">
               <li class="header-menu__item">
                 <a href="#" class="header-menu__link">Home</a>
@@ -47,14 +58,19 @@
               <li class="header-menu__item">
                 <a href="#" class="header-menu__link">Parents</a>
               </li>
+              <li class="header__btn-box header__btn-box--mobile">
+                <a href="#" class="header__btn btn">
+                  Get started
+                </a>
+              </li>
             </ul>
           </nav>
-
           <div class="header__btn-box">
             <a href="#" class="header__btn btn">
               Get started
             </a>
           </div>
+
         </div>
       </div>
     </header>
@@ -237,6 +253,8 @@
           </div>
         </section>
 
+
+
         <section class="events index-block">
           <div class="container">
             <div class="events__inner">
@@ -304,6 +322,7 @@
                       <a href="#" class="events-item__btn item-date__btn">More info</a>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -450,7 +469,7 @@
 
             <div class="case__inner article-big">
               <div class="case__image article-big__image">
-                <img src="images/index/news/01.png" alt="">
+                <img src="images/index/case/01.png" alt="">
               </div>
 
               <div class="case__content news-content article-content">
@@ -476,7 +495,7 @@
             <div class="case__many-articles many-articles two-articles">
               <div class="many-articles__item">
                 <div class="many-articles__image">
-                  <img src="images/index/news/news-01.png" alt="">
+                  <img src="images/index/case/02.png" alt="">
                 </div>
                 <div class="many-articles__title">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.
@@ -498,7 +517,7 @@
 
               <div class="many-articles__item">
                 <div class="many-articles__image">
-                  <img src="images/index/news/news-01.png" alt="">
+                  <img src="images/index/case/03.png" alt="">
                 </div>
                 <div class="many-articles__title">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam.
@@ -526,7 +545,7 @@
           </div>
         </section>
 
-
+        
         <section class="form-main">
           <div class="container">
             <div class="form-main__bg">
@@ -587,18 +606,16 @@
 
           </div>
         </section>
-
-
-
       </div>
     </main>
-    <footer class="footer">
 
-      <div class="container">
+      <footer class="footer">
+
+        <div class="container">
         <div class="footer__inner">
           <div class="footer__info footer-info">
             <a href="#" class="footer-info__logo">
-              <img src="#" alt="">
+              <img src="images/footer/logo.svg" alt="">
             </a>
 
             <div class="footer-info__copyright">
@@ -618,7 +635,7 @@
 
           </div>
 
-          <div class="footer__item footer-item">
+          <div class="footer__item footer-item footer-item--first">
             <div class="footer-item__title">
               Contact us
             </div>
@@ -643,37 +660,37 @@
           </div>
 
 
-          <div class="footer__item footer-item">
+          <div class="footer__item footer-item footer-item--second">
             <div class="footer-item__title">
               navigation
             </div>
 
             <ul class="footer-item__list">
               <li class="footer-item__line">
-                <a href="#" class="footer-item__link link-icon _phone">
+                <a href="#" class="footer-item__link">
                   Home
                 </a>
               </li>
               <li class="footer-item__line">
-                <a href="#" class="footer-item__link link-icon _mail">
+                <a href="#" class="footer-item__link ">
                   What we do
                 </a>
               </li>
               <li class="footer-item__line">
-                <a href="#" class="footer-item__link link-icon _map">
+                <a href="#" class="footer-item__link">
                   Who we help
                 </a>
               </li>
 
               <li class="footer-item__line">
-                <a href="#" class="footer-item__link link-icon _map">
-                  Who we help
+                <a href="#" class="footer-item__link">
+                  Professional Community
                 </a>
               </li>
 
               <li class="footer-item__line">
-                <a href="#" class="footer-item__link link-icon _map">
-                  Who we help
+                <a href="#" class="footer-item__link">
+                  Parents
                 </a>
               </li>
             </ul>
@@ -702,7 +719,8 @@
         </div>
       </div>
 
-    </footer>
+    </footer> 
+
   </div>
 
 

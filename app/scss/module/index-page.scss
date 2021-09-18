@@ -23,6 +23,7 @@
 
         &__content {
             flex: 0 1 42.2%;
+            padding: 0 15px 0 0;
         }
     }
 
@@ -44,8 +45,10 @@
 
         &__element {
             position: absolute;
-            width: 639px;
-            height: 639px;
+            // width: 639px;
+            width: 77%;
+            // height: 639px;
+            padding: 0 0 77%;
             bottom: -41%;
             left: 12%;
             z-index: 0;
@@ -69,8 +72,84 @@
                 }
             }
         }
+
+        &__green,
+        &__transparent{
+            padding: 16px 24px;
+        }
+    }
+
+    @media(max-width: $md-1){
+        .home__title{
+           font-size: 80px;
+        }
+    }
+
+    @media(max-width: $md-2){
+        .home{
+            padding: 40px 0;
+            &__title{
+                font-size: 65px;
+            }
+           
+        }
+    }
+
+    
+    @media(max-width: $md-3){
+        .home{
+            padding: 24px 0 40px;
+            &__title{
+                font-size: 65px;
+            }
+
+            &__inner{
+                flex-direction: column-reverse;
+                align-items: flex-end;
+                width: 100%;
+            }
+            &__content{
+                margin: 64px 0 0;
+
+            }
+           
+        }
+
+        .home-image{
+            flex: none;
+            width: 100%;
+        }
+    }
+
+    @media(max-width: $md-4){
+
+        .home{
+            &__title{
+                font-size: 60px;
+            }
+        }
+
+        .home__content{
+            padding: 0;
+        }
+
+        .home-btns__green,
+        .home-btns__transparent{
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 16px 24px;
+            font-size: 18px;
+        }
+
+        .home-btns__transparent{
+            margin-left: 0;
+            margin-top: 24px;
+        }
     }
 }
+
+
 
 // ==========================================================================
 
@@ -80,7 +159,11 @@
     &__box {
         display: flex;
         flex-wrap: wrap;
-        margin: -6px;
+        margin: 0 -6px -33px;
+
+        @media(max-width: $md-3){
+            margin: 0 0 -24px; 
+        }
     }
 }
 
@@ -100,12 +183,68 @@
 
     &__item {
         position: relative;
-        flex: 0 0 342px;
+        flex: 0 0 23.5%;
         height: 100px;
         margin: 28px 0;
         img {
             @include images;
         }
+    }
+
+    @media(max-width:$md-1){
+
+        .partners{
+            &__item{
+                flex: 0 0 25%;
+            }
+        }
+        
+    }
+
+    @media(max-width:$md-2){
+
+        .partners{
+
+            &__title{
+                margin: 0 0 80px;
+            }
+            &__inner{
+                justify-content: center;
+            }
+            &__item{
+                flex: 0 0 31%;
+            }
+        }
+        
+    }
+
+    @media(max-width:$md-3){
+
+        .partners{
+            &__inner{
+                justify-content: center;
+            }
+            &__item{
+                flex: 0 0 47%;
+            }
+        }
+        
+    }
+
+    @media(max-width:$md-4){
+
+        .partners{
+            &__inner{
+                margin: 0 0 -24px;
+            }
+            &__item{
+                flex: 0 0 100%;
+                margin: 0 0 24px;
+                height: auto;
+                padding: 0 0 29%;
+            }
+        }
+        
     }
 }
 
